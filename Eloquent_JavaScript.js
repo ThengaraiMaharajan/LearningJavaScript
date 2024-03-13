@@ -69,3 +69,102 @@ const hummus = function (factor) {
 };
 hummus(1);
 */
+
+/*
+// arrow functions
+const square1 = (x) => { return x * x; };
+var square11 = square1(2)
+console.log(square11);
+const square2 = x => x * x;
+var square22 = square2(4)
+console.log(square22);
+*/
+
+/*
+// call stack
+function greet(who) {
+    console.log("Hello " + who);
+}
+greet("Harry");
+console.log("Bye");
+
+
+
+// function egg(str){
+//     console.log(str)
+//     return chicken(str)
+// }
+// function chicken(str){
+//     console.log(str)
+//     return egg(str)
+// }
+// egg(1);
+
+
+*/
+
+
+/*
+// optional parameters
+// The following code is allowed and executes without any problem:
+// if you pass extra parameter the function works by taking the first parameter
+function square(x) { return x * x; }
+console.log(square(4, true, "hedgehog"));
+
+
+// if you dont pass parameters correctly the function will be executed but that parameter inside function will be undefined
+function minus(a, b) {
+if (b === undefined) return -a;
+else return a - b;
+}
+console.log(minus(10));
+console.log(minus(10, 5));
+
+// console.log(8 % 4);
+// console.log(8 / 4);
+// console.log(4.5 % 1);
+// if you assign a value or expression to a parameter during the declaration, and didnt assign a value during the call, then the control will take value that is declared during the declation
+// function roundTo(n, step = 1) {
+//     let remainder = n % step;
+//     return n - remainder + (remainder < step / 2 ? 0 : step);
+// };
+// console.log(roundTo(4.5));
+// console.log(roundTo(4.5, 2));
+
+*/
+
+/*
+
+// closure
+function wrapValue(n) {
+    let local = n;
+    return () => local;
+}
+let wrap1 = wrapValue(4);
+let wrap2 = wrapValue(8);
+console.log(wrap1());
+console.log(wrap2());
+
+function multiplier(factor) {
+    return number => number * factor;
+}
+let twice = multiplier(2);
+console.log(twice(5)); // output -> 10
+
+*/
+
+/*
+
+
+
+*/
+
+function power(base, exponent) {
+    if (exponent == 0) {
+        return 1;
+    } else {
+        return base * power(base, exponent - 1);
+    }
+}
+
+console.log(power(2, 3));
