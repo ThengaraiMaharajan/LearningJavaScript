@@ -36,3 +36,40 @@
 //     chessboard += '\n';
 // }
 // console.log(chessboard);
+
+
+
+
+// 4) Minimum
+// function min(a,b){
+//     if(a<b){
+//         return a;
+//     }else{
+//         return b;
+//     }
+// }
+// console.log('Min value of two numbers',min(2,10));
+
+// 5) recursion (not done yet)
+// function isEven(n){
+//     if((n%2)==0){
+//         console.log(n,' is even');
+//         return true;
+//     }else{
+//         console.log(n,' is odd');
+//         return false;
+//     }
+// }
+// console.log(isEven(50));
+
+// 6) Bean Counting
+function countBs(str){
+    let Bcount = 0;
+    let workCount = str.length+1;
+    let index = 0;
+    while(str.length > workCount){
+        index++;
+        console.log(str[index]);
+    }
+}
+countBs('Thengarai Maharajan');
