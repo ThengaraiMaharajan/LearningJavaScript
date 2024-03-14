@@ -63,13 +63,33 @@
 // console.log(isEven(50));
 
 // 6) Bean Counting
-function countBs(str){
-    let Bcount = 0;
-    let workCount = str.length+1;
-    let index = 0;
-    while(str.length > workCount){
-        index++;
-        console.log(str[index]);
-    }
-}
-countBs('Thengarai Maharajan');
+// function countBs(str){
+//     let Bcount = 0;
+//     let workCount = str.length;
+//     let index = 0;
+//     while(index < workCount){
+//         if(str[index] === 'B'){
+//             Bcount++
+//         }
+//         index++;
+//     }
+//     return Bcount
+// }
+// let noOfBs = countBs('BraBus');
+// console.log('noOfBs :',noOfBs);
+
+// 
+// function countChar(str , word){
+//     let Bcount = 0;
+//     let workCount = str.length;
+//     let index = 0;
+//     while(index < workCount){
+//         if(str[index] === word){
+//             Bcount++
+//         }
+//         index++;
+//     }
+//     return Bcount
+// }
+// let noOfWords = countChar('Thengarai Maharajan','n');
+// console.log('noOfWords :',noOfWords);
